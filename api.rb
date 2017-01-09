@@ -12,7 +12,7 @@ module Carlos
     end
 
     get :status do
-      State.instance.to_h
+      Queue.instance.state_to_h
     end
   end
 end
